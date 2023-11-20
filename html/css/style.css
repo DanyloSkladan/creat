@@ -39,10 +39,11 @@ body {
     position: absolute;
     left: 37vw;
     top: 8vh;
+    z-index: -1;
 }
 
 .main-header{
-    height: 100vh;
+    height: 80vw;
 }
 
 .container{
@@ -60,6 +61,13 @@ body {
 
 .gallery{
     display: flex;
+}
+
+.gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
